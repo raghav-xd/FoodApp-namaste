@@ -31,7 +31,7 @@ code {
 /* Navbar styles */
 .navbar {
   display: flex;
-  width: 1680px;
+  width: 1665px;
   justify-content: space-between;
   padding: 10px;
   background-color: black;
@@ -85,8 +85,8 @@ code {
 }
 
 .login-Btn{
-  margin-top: 20px;
-  height: 25px;
+  margin-top: 17px;
+  height: 30px;
   width:60px;
   cursor: pointer;
 }
@@ -94,6 +94,7 @@ code {
 .userinput{
   color:white;
   margin-top: 15px;
+  margin-left: 30px;
 }
 .user-in{
   padding:5px 5px 5px 5px;
@@ -106,35 +107,74 @@ code {
   padding: 10px; /* Optional: Add some padding around the container */
 }
 
-.Search{
-   /* border: 2px solid white; */
-   
-}
 
 .search-btn {
-  height: 30px; /* Match height with the input box */
-  padding: 5px 15px;
+  height: 40px; /* Increased height for better button appearance */
+  padding: 10px 20px;
   margin-top: 16px;
   border: none;
-  border-radius: 5px;
-  background-color: #f0f0f0;
+  border-radius: 30px; /* Rounded edges for a modern look */
+  background: linear-gradient(135deg, #6e7dff, #a8b9ff); /* Gradient background */
+  color: white; /* White text color */
+  font-size: 16px; /* Slightly bigger text */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Optional: Add hover effect */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .search-btn:hover {
-  background-color: #dcdcdc; /* Slightly darker background on hover */
+  background: linear-gradient(135deg, #a8b9ff, #6e7dff); /* Reverse gradient on hover */
   transform: scale(1.05); /* Slightly enlarges the button on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);/* Slightly enlarges the button on hover */
 }
 
 .Search-box {
-  height: 23px; /* Adjust height for better alignment */
-  width: 200px;
-  border-radius: 5px;
-  border: 1px solid #ccc; /* Optional: Add a border */
+  height: 40px; /* Increased height to match button */
+  width: 250px; /* Slightly wider input field */
+  border-radius: 30px; /* Rounded edges for modern look */
+  border: 1px solid #ccc; /* Soft border */
   margin-top: 18px;
-  margin-left: 40px;
+  margin-left: 20px;
+  padding-left: 15px; /* Added padding inside the input */
+  font-size: 16px; /* Slightly larger text */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
    
 }
+
+.Search-box:focus {
+  outline: none; /* Remove default outline */
+  border-color: #6e7dff; /* Blue border on focus */
+  box-shadow: 0 0 10px rgba(110, 125, 255, 0.5); /* Soft blue glow */
+}
+
+
+/* Filter btn */
+
+.fiter-btn {
+  height: 40px; /* Increased height */
+  padding: 10px 20px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #dfc3a3,#a78d5d);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center; /* Vertically center content inside the button */
+  justify-content: center; /* Center text horizontally */
+  text-align: center;
+}
+
+.fiter-btn:hover {
+  background: linear-gradient(135deg, #c6b5b0, #f5deb3);
+  /* transform: scale(1.05); */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
 .login-context{
   color: white;
 }
@@ -202,7 +242,7 @@ code {
 .restrucon {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: black;
   padding: 20px;
 }
@@ -552,6 +592,22 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* cart page */
+.cart-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.cart-container{
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
 
 

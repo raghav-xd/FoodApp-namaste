@@ -3,9 +3,9 @@ import Accordianlist from "./Accordianlist";
 import { useState } from "react";
 
 function RestrurantCate({data,showItem,setshowItem}) {
-  console.log({showItem});
+  // console.log({showItem});
   // const { data } = props;
-  console.log(data);
+  // console.log(data);
  const handleclick=()=>{
   setshowItem();
  }

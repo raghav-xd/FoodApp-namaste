@@ -38,8 +38,8 @@ function RestrurantMenu() {
     );
   });
 
-  console.log(cate);
-  console.log(showItem);
+  // console.log(cate);
+  // console.log(showItem);
 
   return (
     <div className="restrurant-outer">

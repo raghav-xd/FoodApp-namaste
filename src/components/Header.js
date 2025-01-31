@@ -5,11 +5,17 @@ import { useOnlinestatus } from "../utils/useOnlinestatus";
 import { useContext } from "react";
 import UserContext from "../utils/UserContext";
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [btnName, setbtnName] = useState("Login");
   const [online, setonline] = useState(true);
   const onlinestatus = useOnlinestatus();
+
+  // 
+  const cartItems = useSelector((store) => store?.cart?.items);  
+  const cartCount = cartItems.length;
+  console.log(cartItems);
 
   // context
   const {user}=useContext(UserContext);
@@ -41,6 +47,8 @@ const Header = () => {
           <li>
             <Link to="/contact">Contact us</Link>
           </li>
+
+          <li> <Link to="/cart">Cart 🛒 ({cartCount})</Link></li> 
           <button
             className="login-Btn"
             onClick={() => {
