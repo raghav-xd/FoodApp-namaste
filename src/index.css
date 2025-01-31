@@ -52,6 +52,8 @@ code {
   display: flex;
   /* width: 100%; */
   padding-right: 30px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -184,56 +186,95 @@ code {
   color:white;
 }
 /* Menu container */
-
-.menu-container{
-  height: 400px;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  /* border: 2px solid white; */
-  position: relative;
-  overflow: hidden;
-  /* width: 2000px; */
-  /* background-color: #f0f0f0; */
-
-
+.menu-container {
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  /* background-color: #f8f9fa; */
 }
-.menu-container2{
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* border: 1px solid white; */
-  
+/* Heading */
+.menu-heading {
+  font-size: 28px;
+  color: #b88155;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-.menu-card{
-  width: 200px;
-  height:300px;
-  /* border: 2px solid white; */
-  margin: 10px 10px 10px 10px;
-  
-  
+
+/* Grid layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
-.menu-img{
-  width:50%;
-  height:auto !important;
+
+/* Menu card */
+.menu-card {
+  /* background-color: #ffffff; */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+  width: 260px;
+  /* transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
+}
+
+/* 🛑 Added Border-Shadow on Hover */
+.menu-card:hover {
+  /* transform: scale(1.03); */
+  box-shadow: 0px 0px 15px rgba(184, 129, 85, 1); /* Shadow effect */
+}
+
+/* Image */
+.menu-img {
+  width: 100%;
+  height: 160px;
   object-fit: cover;
-  /* border:2px solid blue; */
-}
-.menu-heading{
-  color:#f5deb3;
+  border-radius: 10px;
+  /* transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
 }
 
-.menu-card-name{
+/* Image hover effect */
+/* .menu-card:hover .menu-img {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 10px rgba(255, 99, 71, 0.5);
+} */
+
+/* Food Name */
+.menu-card-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #938d8d;
+}
+
+/* Price */
+.menu-card-price {
+  font-size: 16px;
+  color: #ff4500;
+  font-weight: bold;
+}
+
+/* Button */
+.menu-btn {
+  background-color: #ff6347;
   color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  /* transition: background-color 0.3s ease, box-shadow 0.3s ease-in-out; */
 }
-.menu-card >img{
-  width:100%;
-  height:100%;
-}
-.after-menu{
-  color: rgb(128, 87, 87);
 
+/* Button hover effect */
+.menu-btn:hover {
+  background-color: #d94328;
+  box-shadow: 0px 0px 8px rgba(217, 67, 40, 0.8);
 }
+
 /* Body Section */
 .body-con1{
   display: flex;
@@ -555,9 +596,11 @@ h1 {
 }
 
 .item-name {
-  display: flex;
-  flex-direction: column;
+  font-style:oblique;
+  color: #333;
+  width:80%;
 }
+
 
 .accordian-item p {
   margin-top: 8px;
@@ -593,6 +636,13 @@ button:hover {
 }
 
 /* cart page */
+
+.cart-heading{
+  color:white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
 .cart-page{
   display: flex;
   flex-direction: column;
@@ -602,6 +652,7 @@ button:hover {
 }
 .cart-container{
   /* border: 2px solid blue; */
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;

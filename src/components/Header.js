@@ -13,7 +13,7 @@ const Header = () => {
   const onlinestatus = useOnlinestatus();
 
   // 
-  const cartItems = useSelector((store) => store?.cart?.items);  
+  const cartItems = useSelector((store) => store?.cart?.items) || [];  
   const cartCount = cartItems.length;
   console.log(cartItems);
 

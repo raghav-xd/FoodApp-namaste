@@ -2,22 +2,18 @@ import React from "react";
 import Menucard from "./Menucard";
 import menudata from "../utils/menudata";
 
-const Menu=()=>{
-    return(
-      <div className="menu-container">
-          <h2 className="menu-heading"> Order our best food options</h2>
+const Menu = () => {
+  return (
+    <div className="menu-container">
+      <h2 className="menu-heading">🍽️ Order Our Best Food Options</h2>
 
-          <div className="menu-container2">
-          
-          {
-          menudata.map((res)=>{
-            return <Menucard prop={res}/>
-          })
-
-          }
-
-          </div>
+      <div className="menu-grid">
+        {menudata.map((item, index) => (
+          <Menucard key={index} prop={item} />
+        ))}
       </div>
-    );
-}
+    </div>
+  );
+};
+
 export default Menu;

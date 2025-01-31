@@ -96,7 +96,7 @@ const Body = () => {
           search
         </button>
 
-        <div className="userinput">
+        {/* <div className="userinput">
           <label>Username: </label>
           <input
             className="user-in"
@@ -105,7 +105,7 @@ const Body = () => {
               setusername(e.target.value);
             }}
           ></input>
-        </div>
+        </div> */}
       </div>
 
       <h1 className="restru-heading">Top restaurant chains in Bathinda!!</h1>

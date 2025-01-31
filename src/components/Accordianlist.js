@@ -23,7 +23,7 @@ function Accordianlist({ dataa }) {
               <div className="item-name">
                 <span>{item.card.info.name}</span>
                 <span> ₹- {item.card.info.price / 100}</span>
-                {/* <span>{item.card.info.description}</span> */}
+                <span>{item.card.info.description}</span>
               </div>
             </div>
 

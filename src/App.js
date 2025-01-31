@@ -29,7 +29,7 @@ const Grocery = lazy(() => import("./components/Grocery"));
 
 // App layout
 function App() {
-  const [username, setusername] = useState("hi, Rghv Si!");
+  const [username, setusername] = useState("hi, Rghv");
 
   return (
     <Provider store={appStore}>
